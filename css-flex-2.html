@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: rgb(44, 44, 44);
+        margin: 0;
+        inset: 0;
+        padding: 0;
+      }
+      .header {
+        display: flex;
+        padding: 20px;
+        flex-direction: row;
+        background-color: orange;
+        gap: 10px;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .header > p {
+        font-size: 18px;
+        background-color: rgb(36, 36, 36);
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+      }
+
+      .header > p:hover {
+        background-color: rgb(67, 67, 67);
+      }
+
+      /* Extra small devices (phones, 600px and down) */
+      @media only screen and (max-width: 600px) {
+        .media-query {
+          background-color: green !important;
+        }
+        .sidebar {
+          display: none;
+        }
+      }
+
+      /* Small devices (portrait tablets and large phones, 600px and up) */
+      @media only screen and (min-width: 600px) {
+        .media-query {
+          background-color: yellow !important;
+        }
+        .sidebar {
+          display: none;
+        }
+      }
+
+      /* Medium devices (landscape tablets, 768px and up) */
+      @media only screen and (min-width: 768px) {
+        .media-query {
+          background-color: blue !important;
+        }
+        .sidebar {
+          display: block;
+        }
+      }
+
+      /* Large devices (laptops/desktops, 992px and up) */
+      @media only screen and (min-width: 992px) {
+        .media-query {
+          background-color: purple !important;
+        }
+      }
+
+      /* Extra large devices (large laptops and desktops, 1200px and up) */
+      @media only screen and (min-width: 1200px) {
+        .media-query {
+          background-color: orange !important;
+        }
+      }
+
+      /*
+           .header:hover {
+        background-color: orange;
+      }   */
+
+      .main-wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 50px;
+        gap: 20px;
+      }
+
+      .content-area {
+        background-color: rgb(233, 233, 233);
+        width: 550px;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: -5px 5px 10px rgb(97, 97, 97);
+      }
+
+      .sidebar {
+        background-color: rgb(233, 233, 233);
+        width: 250px;
+        padding: 20px;
+        border-radius: 5px;
+        border: 10px solid rgb(154, 0, 0);
+      }
+
+      .cart-items {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .cart-items > li {
+        background-color: rgb(0, 128, 255);
+        margin-top: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        color: white;
+        text-align: center;
+      }
+
+      .sidebar > button {
+        background-color: orange;
+        width: 100%;
+        padding: 10px;
+        border: 0;
+        border-radius: 5px;
+        color: white;
+        font-size: 14px;
+        font-weight: 900;
+        text-transform: uppercase;
+      }
+
+      .media-query {
+        background-color: red;
+        width: 100%;
+        padding: 20px;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <img src="./images/png-images/first-image.png" height="40px" />
+      <p>Anasayfa</p>
+      <p>Ürünler</p>
+      <p>Sepetim</p>
+      <p>İletişim</p>
+    </div>
+
+    <div class="main-wrapper">
+      <div class="content-area">
+        <h1>Web sitemize hoşgeldiniz!</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+          consectetur, nisi in venenatis scelerisque, libero quam vulputate
+          erat, nec dapibus ligula nulla nec ipsum. Sed pulvinar tristique justo
+          sit amet sollicitudin. Aliquam laoreet erat elit, vitae consectetur
+          urna rhoncus in. Donec libero enim, placerat id lacinia in, tristique
+          id nisi. Integer interdum felis neque, eu euismod mauris eleifend sit
+          amet. Sed aliquam, est quis convallis fermentum, eros quam lobortis
+          est, a maximus lorem nunc sit amet dolor. Nunc posuere cursus ligula.
+        </p>
+      </div>
+
+      <div class="sidebar">
+        <h2>Sepetim</h2>
+        <ul class="cart-items">
+          <li>Klavye ve Mouse Seti</li>
+          <li>Mikrofon</li>
+          <li>120cm tripod</li>
+          <li>Mousepad 50x50</li>
+        </ul>
+        <button>Sepete Git</button>
+      </div>
+    </div>
+    <div class="media-query">
+      Burada media-query breakpoint'lerini öğreniyoruz
+    </div>
+  </body>
+</html>
